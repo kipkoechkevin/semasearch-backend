@@ -2,7 +2,8 @@ export default {
   apps: [
     {
       name: "semasearch",
-      script: "./src/index.js",
+      script: "src/index.js",
+      cwd: "/var/www/semasearch-backend/backend", // Absolute path to your app
       instances: 2, // Use multiple CPU cores (adjust based on your server)
       exec_mode: "cluster",
       env: {
